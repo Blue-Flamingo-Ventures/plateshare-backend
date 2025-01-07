@@ -16,8 +16,9 @@ type TokenResponse struct {
 }
 
 type Claims struct {
-	Nickname     string `json:"nickname"`
-	CausalityKey string `json:"causality_key"`
+	Nickname       string `json:"nickname"`
+	CausalityKey   string `json:"causality_key"`
+	CausalityToken string `json:"causality_token"`
 	jwt.RegisteredClaims
 }
 

@@ -92,9 +92,9 @@ func init() {
 		}
 
 		c.JSON(http.StatusOK, gin.H{
-			"message":       "Login successful",
-			"causality_key": claims.CausalityKey,
-			"nickname":      claims.Nickname,
+			"causality_key":   claims.CausalityKey,
+			"causality_token": claims.CausalityToken,
+			"nickname":        claims.Nickname,
 		})
 	})
 
